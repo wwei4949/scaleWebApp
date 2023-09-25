@@ -1,0 +1,120 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-inputs {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-inputs label {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+
+.calendar {
+    border-collapse: collapse;
+    user-select: none;
+    table-layout: fixed;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+
+.calendar th,
+.calendar td:first-child {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.calendar td {
+    background-color: pink;
+    cursor: pointer;
+}
+
+.calendar td.selected {
+    background-color: green;
+}
+
+.calendar td.tempSelected {
+    background-color: lightgreen;
+}
+
+.calendar td.aboutToDeselect {
+    background-color: #b0d7b6;
+}
+
+.calendar td:hover {
+    opacity: 0.7;
+}
+
+.selectedTimeSlots {
+    margin-top: 20px;
+}
+
+.submitBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.submitBtn:hover {
+    background-color: #187CBD;
+}
+
+.calendar-container {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.volunteer-list {
+    height: 380px;
+    width: 300px;
+    max-height: 600px;
+    max-width: 500px;
+    margin-left: 100px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 80px;
+    box-shadow: 0px 0px 5px #aaa;
+}
+
+.select-week {
+    margin-top: 20px;
+    color: white;
+}
